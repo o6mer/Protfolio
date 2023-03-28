@@ -1,10 +1,10 @@
 import React from "react";
-import Navbar from "./general/Navbar";
-import Hero from "./hero/Hero";
-import Skills from "./skills/Skills";
-import Projects from "./projects/Projects";
-import Footer from "./general/Footer";
-import Contact from "./contact/Contact";
+import Navbar from "./components/general/Navbar";
+import Hero from "./components/hero/Hero";
+import Skills from "./components/skills/Skills";
+import Projects from "./components/projects/Projects";
+import Contact from "./components/contact/Contact";
+import Footer from "./components/general/Footer";
 
 function App() {
   return (

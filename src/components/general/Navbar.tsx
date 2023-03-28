@@ -30,7 +30,9 @@ const Navbar = () => {
     return (
       <a
         href={href}
-        className={`underline-animation ${active === title && "active"}`}
+        className={`px-1 transition-all underline-animation ${
+          active === title && "active"
+        }`}
         onClick={() => setActive(title)}
       >
         {title}
@@ -40,14 +42,14 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`flex justify-center items-center h-[5vh] transition-all bg-white w-full ${stickyClass}`}
+      className={`flex justify-center items-center h-[5vh] transition-all bg-secondary w-full ${stickyClass} shadow-lg`}
     >
       <div className="flex w-full max-w-5xl text-xl justify-between py-4">
         <div>
           <p>Logo</p>
         </div>
         <div className="flex gap-4">
-          <LinkItem href="#omer" title="Omer" />
+          <LinkItem href="#hero" title="Omer" />
           <LinkItem href="#skills" title="Skills" />
           <LinkItem href="#projects" title="Projects" />
           <LinkItem href="#Contact Me" title="contact" />

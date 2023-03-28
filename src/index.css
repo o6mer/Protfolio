@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --primary-color: #dce0d9;
+  --secondary-color: #fbf6ef;
+  --third-color: #ead7c3;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -14,6 +20,7 @@ html {
 
 body {
   height: 100%;
+  background-color: var(--secondary-color);
 }
 
 #root {
@@ -28,6 +35,7 @@ body {
 
 .active {
   border-bottom: 2px solid salmon;
+  transition: all 150ms;
 }
 
 .underline-animation:after {
