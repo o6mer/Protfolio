@@ -3,9 +3,10 @@
 @tailwind utilities;
 
 :root {
-  --primary-color: #dce0d9;
-  --secondary-color: #fbf6ef;
-  --third-color: #ead7c3;
+  --primary-color: #0e050f;
+  --secondary-color: #170b3b;
+  --third-color: #341948;
+  --fourth-color: #9388a2;
 }
 
 * {
@@ -16,11 +17,12 @@
 
 html {
   scroll-behavior: smooth;
+  color: white;
 }
 
 body {
   height: 100%;
-  background-color: var(--secondary-color);
+  background-color: var(--primary-color);
 }
 
 #root {
@@ -34,7 +36,7 @@ body {
 }
 
 .active {
-  border-bottom: 2px solid salmon;
+  border-bottom: 2px solid var(--fourth-color);
   transition: all 150ms;
 }
 
@@ -45,14 +47,20 @@ body {
   height: 2px;
   display: block;
   right: 0;
-  background: salmon;
+  background: var(--fourth-color);
   transition: width 0.5s ease;
 }
 
 .underline-animation:hover:after {
   width: 100%;
   left: 0;
-  background: salmon;
+  background: var(--fourth-color);
+}
+
+.underline-animation:focus:after {
+  width: 100%;
+  left: 0;
+  background: var(--fourth-color);
 }
 
 .popin {

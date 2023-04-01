@@ -7,8 +7,8 @@ const Hero = () => {
       id="hero"
       className="min-h-[95vh]  flex items-center justify-center"
     >
-      <div className="grid grid-cols-2 items-center  h-full w-full max-w-5xl">
-        <div className="flex flex-col gap-8">
+      <div className="flex justify-between w-full  items-center h-full  max-w-5xl">
+        <div className="flex flex-col gap-8 w-[50%]">
           <h2 className="text-6xl font-bold">
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
           </h2>
@@ -18,13 +18,11 @@ const Hero = () => {
             voluptatum sit nisi.
           </p>
         </div>
-        <div>
-          <img
-            className="rounded-3xl opacity-80 filter hero-image "
-            src={heroImage}
-            alt="heroImage"
-          />
-        </div>
+        <img
+          className="rounded-3xl opacity-80 filter hero-image "
+          src={heroImage}
+          alt="heroImage"
+        />
       </div>
     </section>
   );

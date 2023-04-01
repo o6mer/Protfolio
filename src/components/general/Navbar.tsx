@@ -42,7 +42,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`flex justify-center items-center h-[5vh] transition-all bg-secondary w-full ${stickyClass} shadow-lg`}
+      className={`flex justify-center items-center h-[5vh] transition-all bg-primary w-full ${stickyClass} shadow-lg`}
     >
       <div className="flex w-full max-w-5xl text-xl justify-between py-4">
         <div>
