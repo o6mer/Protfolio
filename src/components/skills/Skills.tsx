@@ -9,8 +9,8 @@ const Skills = () => {
       bgColor="primary"
       title="Languages and Frameworks"
     >
-      <div className="flex flex-col items-center">
-        <div className="grid grid-cols-6  content-evenly place-items-stretch  gap-4">
+      <div className="h-full flex flex-col items-center">
+        <div className="w-full grid grid-cols-5 items-stretch  gap-4">
           {Object.keys(icons).map((name: any) => (
             <LogoContainer name={name} />
           ))}

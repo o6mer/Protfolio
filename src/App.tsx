@@ -5,15 +5,20 @@ import Skills from "./components/skills/Skills";
 import Projects from "./components/projects/Projects";
 import Contact from "./components/contact/Contact";
 import Footer from "./components/general/Footer";
+import { Divider } from "@mui/material";
 
 function App() {
   return (
     <main>
       <Navbar />
       <Hero />
+      <Divider />
       <Skills />
+      <Divider />
       <Projects />
+      <Divider />
       <Contact />
+      <Divider />
       <Footer />
     </main>
   );

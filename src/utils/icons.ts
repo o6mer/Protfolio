@@ -10,6 +10,8 @@ import postsql from "../assets/postgresqlIcon.png";
 import tailwind from "../assets/tailwindIcon.png";
 import jquery from "../assets/jqueryIcon.png";
 import redux from "../assets/redux.png";
+import socket from "../assets/socketIoIcon.png";
+import express from "../assets/expressIcon.png";
 
 export const icons = {
   css: { image: css, title: "CSS3" },
@@ -23,4 +25,6 @@ export const icons = {
   tailwind: { image: tailwind, title: "TailwindCSS" },
   jquery: { image: jquery, title: "JQuery" },
   redux: { image: redux, title: "Redux" },
+  socket: { image: socket, title: "Socket.io" },
+  express: { image: express, title: "Express" },
 };

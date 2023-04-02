@@ -42,7 +42,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`flex justify-center items-center h-[5vh] transition-all bg-primary w-full ${stickyClass} shadow-lg`}
+      className={`flex justify-center items-center h-[5vh] transition-all bg-third w-full ${stickyClass} shadow-lg`}
     >
       <div className="flex w-full max-w-5xl text-xl justify-between py-4">
         <div>
@@ -52,7 +52,7 @@ const Navbar = () => {
           <LinkItem href="#hero" title="Omer" />
           <LinkItem href="#skills" title="Skills" />
           <LinkItem href="#projects" title="Projects" />
-          <LinkItem href="#Contact Me" title="contact" />
+          <LinkItem href="#contact" title="Contact Me" />
         </div>
       </div>
     </nav>

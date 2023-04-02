@@ -15,7 +15,7 @@ const Contact = () => {
   };
 
   return (
-    <SectionContainer bgColor="primary" title="Contact Me">
+    <SectionContainer bgColor="primary" title="Contact Me" id="contact">
       <form action="" onSubmit={submitHandler}>
         <div className="flex flex-col items-center gap-4 ">
           <div className="w-full grid grid-cols-2 gap-4">
@@ -46,7 +46,7 @@ const Contact = () => {
             onChange={(e) => setMessage(e.currentTarget.value)}
             isTextarea
           />
-          <button className="w-fit bg-secondary hover:bg-third transition-all font-bold px-4 py-2">
+          <button className="w-fit bg-third hover:bg-fourth transition-all font-bold px-4 py-2">
             Send
           </button>
         </div>

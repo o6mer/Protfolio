@@ -11,8 +11,12 @@ interface Props {
 const LogoContainer = ({ name }: Props) => {
   return (
     <Tooltip title={icons[name].title} arrow placement="top">
-      <div className="w-full hover:scale-[1.02] transition-all hover:rotate-1 flex items-center">
-        <img src={icons[name].image} alt="" className="object-cover" />
+      <div className="flex items-center justify-center relative hover:scale-[1.02] transition-all hover:rotate-1  bg-fourth rounded-full p-2">
+        <img
+          src={icons[name].image}
+          alt=""
+          className="h-full max-h-[70%] aspect-square object-contain "
+        />
       </div>
     </Tooltip>
   );

@@ -17,12 +17,21 @@
 
 html {
   scroll-behavior: smooth;
-  color: white;
+}
+
+input,
+textarea {
+  color: black;
 }
 
 body {
   height: 100%;
   background-color: var(--primary-color);
+  color: white;
+}
+
+hr {
+  background-color: var(--fourth-color);
 }
 
 #root {
