@@ -12,7 +12,7 @@ const Projects = () => {
     <SectionContainer id="projects" title="Projects">
       <div className="flex flex-col gap-16">
         <ProjectItem
-          title="snowbound"
+          title="Snowbound"
           description="Ski resort oriented web stite. Plan your next ski vaction and compare the best ski resorts. This project was created as a Full-Stack cours final proejct and developed by me and 3 other developers. "
           github="https://github.com/o6mer/snowbound"
           liveUrl="https://snowbound.netlify.app"

@@ -35,11 +35,11 @@ const ProjectItem = ({
     >
       <div className="flex w-[50%] flex-col justify-around h-min">
         <div>
-          <Link to={`/project/${title}`}>
-            <h1 className="text-3xl hover:text-slate-700 font-bold underline  transition-all">
+          <a href={liveUrl} target="_blank">
+            <h1 className="text-3xl hover:text-slate-300 font-bold underline  transition-all">
               {title}
             </h1>
-          </Link>
+          </a>
           <p className="mt-2 text-xl">{description}</p>
         </div>
         <div className="w-[50%] h-min mt-4 grid grid-cols-4 gap-2 ">
@@ -64,14 +64,14 @@ const ProjectItem = ({
           <a
             className={`${
               !reversed && "ml-auto"
-            } hover:text-slate-700 transition-all`}
+            } hover:text-slate-300 transition-all`}
             target="_blank"
             href={github}
           >
             <GitHubIcon />
           </a>
           <a
-            className="hover:text-slate-700 transition-all"
+            className="hover:text-slate-300 transition-all"
             target="_blank"
             href={liveUrl}
           >
