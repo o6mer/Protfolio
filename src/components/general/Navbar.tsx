@@ -46,10 +46,10 @@ const Navbar = () => {
     >
       <div className="flex w-full max-w-5xl text-xl justify-between py-4">
         <div>
-          <p>Logo</p>
+          <LinkItem href="#" title="Omer" />
         </div>
         <div className="flex gap-4">
-          <LinkItem href="#hero" title="Omer" />
+          <LinkItem href="#about" title="About" />
           <LinkItem href="#skills" title="Skills" />
           <LinkItem href="#projects" title="Projects" />
           <LinkItem href="#contact" title="Contact Me" />
