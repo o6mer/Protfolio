@@ -3,70 +3,77 @@ import SectionContainer from "../general/SectionContainer";
 import backgroundPic from "../../assets/about/background.svg";
 import educationnPic from "../../assets/about/education.svg";
 import plansPic from "../../assets/about/plans.svg";
+import { Fade } from "react-awesome-reveal";
 
 const About = () => {
   return (
     <SectionContainer id="about" title="About Me">
       <div className="gap-2 flex flex-col text-xl">
         <div className="flex flex-col gap-4">
-          <div className="flex">
-            <div className="flex flex-col gap-2 ">
-              <StyledHeader title="Background" />
-              <p>
-                Hello, my name is Omer Liraz and I am a passionate Full-Stack
-                developer who enjoys building complex applications with great UI
-                and powerful backends.
-              </p>{" "}
-              <p>
-                Computers, specifically programming and development, have been a
-                passion of mine all my life. In high school, I took my first
-                computer science lessons and fell in love with the field.
-              </p>
+          <Fade triggerOnce>
+            <div className="flex">
+              <div className="flex flex-col gap-2 ">
+                <StyledHeader title="Background" />
+                <p>
+                  Hello, my name is Omer Liraz and I am a passionate Full-Stack
+                  developer who enjoys building complex applications with great
+                  UI and powerful backends.
+                </p>{" "}
+                <p>
+                  Computers, specifically programming and development, have been
+                  a passion of mine all my life. In high school, I took my first
+                  computer science lessons and fell in love with the field.
+                </p>
+              </div>
+              <img src={backgroundPic} alt="" className="w-[30%]" />
             </div>
-            <img src={backgroundPic} alt="" className="w-[30%]" />
-          </div>
-          <div className="flex">
-            <img src={educationnPic} alt="" className="w-[30%]" />
-            <div className="flex flex-col gap-2 ">
-              <StyledHeader title="Education and Experience" />
-              <p>
-                After my release from the army at the end of 2021, I started to
-                teach myself Full-Stack development. I began with a few Unity
-                courses to learn the basics of the web (HTML, CSS, and
-                JavaScript), and from that point on, I was hooked.
-              </p>
-              <p>
-                After about 5 months of learning, practicing, and creating
-                projects with vanilla JavaScript and JQuery, I started learning
-                React as my main JavaScript framework and Node.js for the
-                backend coupled with MongoDB and Express.
-              </p>
-              <p>
-                Around 10 months into self-learning and creating projects, I
-                enrolled in a Full-Stack course at CyberPro University. The
-                course spanned 700 hours over 4 months. I decided that I wanted
-                to take my learning to the next level, learn how to work as part
-                of a team, and practice as much as possible.
-              </p>
-              <p>
-                Throughout my learning journey, I have focused on using good
-                practices and writing clean code. Writing readable and
-                maintainable code has been one of my biggest priorities.
-              </p>
+          </Fade>
+          <Fade triggerOnce>
+            <div className="flex">
+              <img src={educationnPic} alt="" className="w-[30%]" />
+              <div className="flex flex-col gap-2 ">
+                <StyledHeader title="Education and Experience" />
+                <p>
+                  After my release from the army at the end of 2021, I started
+                  to teach myself Full-Stack development. I began with a few
+                  Unity courses to learn the basics of the web (HTML, CSS, and
+                  JavaScript), and from that point on, I was hooked.
+                </p>
+                <p>
+                  After about 5 months of learning, practicing, and creating
+                  projects with vanilla JavaScript and JQuery, I started
+                  learning React as my main JavaScript framework and Node.js for
+                  the backend coupled with MongoDB and Express.
+                </p>
+                <p>
+                  Around 10 months into self-learning and creating projects, I
+                  enrolled in a Full-Stack course at CyberPro University. The
+                  course spanned 700 hours over 4 months. I decided that I
+                  wanted to take my learning to the next level, learn how to
+                  work as part of a team, and practice as much as possible.
+                </p>
+                <p>
+                  Throughout my learning journey, I have focused on using good
+                  practices and writing clean code. Writing readable and
+                  maintainable code has been one of my biggest priorities.
+                </p>
+              </div>
             </div>
-          </div>
-          <div className="flex  mt-4">
-            <div className="flex flex-col gap-2 ">
-              <StyledHeader title="Plans" />
-              <p>
-                Now, I am seeking my first professional position as a Full-Stack
-                developer. <br /> My goals are to learn as much as possible,
-                prove my knowledge and skills, and make a significant impact on
-                a real-life product.
-              </p>
+          </Fade>
+          <Fade triggerOnce>
+            <div className="flex  mt-4">
+              <div className="flex flex-col gap-2 ">
+                <StyledHeader title="Plans" />
+                <p>
+                  Now, I am seeking my first professional position as a
+                  Full-Stack developer. <br /> My goals are to learn as much as
+                  possible, prove my knowledge and skills, and make a
+                  significant impact on a real-life product.
+                </p>
+              </div>
+              <img src={plansPic} alt="" className="w-[30%]" />
             </div>
-            <img src={plansPic} alt="" className="w-[30%]" />
-          </div>
+          </Fade>
           <div className="flex flex-col gap-2 "></div>
         </div>
       </div>

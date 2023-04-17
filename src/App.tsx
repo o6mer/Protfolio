@@ -7,21 +7,28 @@ import Contact from "./components/contact/Contact";
 import Footer from "./components/general/Footer";
 import { Divider } from "@mui/material";
 import About from "./components/about/About";
+import { Fade } from "react-awesome-reveal";
 
 function App() {
   return (
     <main>
       <Navbar />
-      <Hero />
-      <Divider />
+      <Fade triggerOnce>
+        <Hero />
+        <Divider />
+      </Fade>
       <About />
       <Divider />
-      <Skills />
-      <Divider />
+      <Fade triggerOnce>
+        <Skills />
+        <Divider />
+      </Fade>
       <Projects />
       <Divider />
-      <Contact />
-      <Divider />
+      <Fade triggerOnce>
+        <Contact />
+        <Divider />
+      </Fade>
       <Footer />
     </main>
   );
