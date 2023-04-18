@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import SectionContainer from "../general/SectionContainer";
 import StyledInput from "./components/StyledInput";
+import cv from "../../assets/omer-liraz-cv.pdf";
+import FileSaver from "file-saver";
 
 const Contact = () => {
   const [email, setEmail] = useState("");
@@ -16,6 +18,9 @@ const Contact = () => {
 
   return (
     <SectionContainer bgColor="primary" title="Contact Me" id="contact">
+      <a href={cv} download={cv}>
+        My C.V
+      </a>
       <form action="" onSubmit={submitHandler}>
         <div className="flex flex-col items-center gap-4 ">
           <div className="w-full grid grid-cols-2 gap-4">
