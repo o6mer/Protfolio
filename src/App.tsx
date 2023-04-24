@@ -29,7 +29,6 @@ function App() {
         <Contact />
         <Divider />
       </Fade>
-      <Footer />
     </main>
   );
 }

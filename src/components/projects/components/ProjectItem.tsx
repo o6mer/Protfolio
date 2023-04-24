@@ -2,7 +2,6 @@ import React from "react";
 import LogoContainer, { TSkillName } from "../../general/LogoContainer";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LaunchIcon from "@mui/icons-material/Launch";
-import { Link } from "react-router-dom";
 import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
