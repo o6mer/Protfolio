@@ -13,19 +13,19 @@ function App() {
   return (
     <main>
       <Navbar />
-      <Fade triggerOnce>
+      <Fade triggerOnce duration={2000}>
         <Hero />
         <Divider />
       </Fade>
       <About />
       <Divider />
-      <Fade triggerOnce>
+      <Fade triggerOnce duration={2000}>
         <Skills />
         <Divider />
       </Fade>
       <Projects />
       <Divider />
-      <Fade triggerOnce>
+      <Fade triggerOnce duration={2000}>
         <Contact />
         <Divider />
       </Fade>
