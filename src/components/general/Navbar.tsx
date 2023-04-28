@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import SwipeableDrawer from "@mui/material/SwipeableDrawer";
+import Drawer from "@mui/material/Drawer";
 import MenuIcon from "@mui/icons-material/Menu";
 interface Props {
   href: string;
@@ -72,16 +72,15 @@ const Navbar = () => {
             <MenuIcon />
           </button>
         </div>
-        <SwipeableDrawer
+        <Drawer
           anchor="top"
           open={drawerOpen}
           onClose={() => setDrawerOpen(false)}
-          onOpen={() => setDrawerOpen(true)}
         >
           <div className="flex flex-col gap-2 text-lg  bg-third text-white p-4">
             {links()}
           </div>
-        </SwipeableDrawer>
+        </Drawer>
       </div>
     </nav>
   );
