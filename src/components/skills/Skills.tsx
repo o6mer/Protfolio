@@ -10,7 +10,7 @@ const Skills = () => {
       title="Languages and Frameworks"
     >
       <div className="h-full flex flex-col items-center">
-        <div className="w-full grid grid-cols-5 items-stretch  gap-4">
+        <div className="w-full   grid md:grid-cols-5 grid-cols-3 items-stretch  gap-4">
           {Object.keys(icons).map((name: any) => (
             <LogoContainer name={name} key={name} />
           ))}

@@ -22,7 +22,7 @@ const Contact = () => {
   return (
     <SectionContainer bgColor="primary" title="Contact Me" id="contact">
       <div className="flex flex-col gap-10 ">
-        <div className="flex justify-evenly items-center text-xl">
+        <div className="flex  flex-wrap gap-4 md:gap-0 justify-evenly items-center text-xl">
           <a
             className="font-bold underline-animation flex"
             href={cv}

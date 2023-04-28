@@ -45,7 +45,16 @@ hr {
   border-bottom: 2px solid rgba(0, 0, 0, 0);
 }
 
+@media (min-width: 768px) {
+  .acitve {
+    border-bottom: 2px solid var(--fourth-color);
+    transition: all 150ms;
+  }
+}
+
 .active {
+  width: fit-content;
+
   border-bottom: 2px solid var(--fourth-color);
   transition: all 150ms;
 }

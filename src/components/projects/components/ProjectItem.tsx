@@ -30,11 +30,11 @@ const ProjectItem = ({
   return (
     <Fade triggerOnce>
       <div
-        className={`flex justify-between items-stretch gap-8 h-min ${
-          reversed && "flex-row-reverse"
+        className={`flex flex-col justify-between items-stretch gap-8 h-min ${
+          reversed ? "md:flex-row-reverse" : "md:flex-row"
         }`}
       >
-        <div className="flex w-[50%] flex-col justify-around h-min">
+        <div className="flex md:w-[50%] flex-col justify-around h-min">
           <div>
             <a href={liveUrl} target="_blank">
               <h1 className="text-3xl hover:text-slate-300 font-bold underline  transition-all">
@@ -43,13 +43,13 @@ const ProjectItem = ({
             </a>
             <p className="mt-2 text-xl">{description}</p>
           </div>
-          <div className="w-[50%] h-min mt-4 grid grid-cols-4 gap-2 ">
+          <div className="md:w-[50%] h-min mt-4 grid grid-cols-4 gap-2 ">
             {skills.map((skill) => (
               <LogoContainer name={skill} key={skill} />
             ))}
           </div>
         </div>
-        <div className="flex flex-col w-[50%] ">
+        <div className="flex flex-col md:w-[50%] ">
           {typeof image === "string" ? (
             <Zoom>
               <img className="shadow-lg" src={image} alt="" />
@@ -63,7 +63,7 @@ const ProjectItem = ({
           )}
           <div className="flex mt-4">
             <a
-              className={`${
+              className={`ml-auto  ${
                 !reversed && "ml-auto"
               } hover:text-slate-300 transition-all`}
               target="_blank"

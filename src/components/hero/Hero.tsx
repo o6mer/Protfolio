@@ -6,9 +6,9 @@ const Hero = () => {
   return (
     <section
       id="hero"
-      className="min-h-[95vh]  flex items-center justify-center"
+      className="min-h-[95vh]  flex items-center justify-center px-4 md:px-0"
     >
-      <div className="flex justify-between w-full  items-center h-full  max-w-5xl">
+      <div className="flex justify-center md:justify-between w-full  items-center h-full  max-w-5xl">
         <div className="flex flex-col  ">
           <TypeAnimation
             className="text-6xl"
@@ -27,7 +27,7 @@ const Hero = () => {
           />
         </div>
         <img
-          className="rounded-3xl opacity-80 filter hero-image "
+          className="md:block hidden rounded-3xl opacity-80 filter hero-image "
           src={heroImage}
           alt="heroImage"
         />

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
-
+import SwipeableDrawer from "@mui/material/SwipeableDrawer";
+import MenuIcon from "@mui/icons-material/Menu";
 interface Props {
   href: string;
   title: string;
@@ -8,6 +9,7 @@ interface Props {
 const Navbar = () => {
   const [active, setActive] = useState("");
   const [stickyClass, setStickyClass] = useState("relative");
+  const [drawerOpen, setDrawerOpen] = useState(false);
 
   useEffect(() => {
     window.addEventListener("scroll", stickNavbar);
@@ -33,27 +35,53 @@ const Navbar = () => {
         className={`px-1 transition-all underline-animation ${
           active === title && "active"
         }`}
-        onClick={() => setActive(title)}
+        onClick={() => {
+          setActive(title);
+          setDrawerOpen(false);
+        }}
       >
         {title}
       </a>
     );
   };
 
+  const links = () => (
+    <>
+      <LinkItem href="#about" title="About" />
+      <LinkItem href="#skills" title="Skills" />
+      <LinkItem href="#projects" title="Projects" />
+      <LinkItem href="#contact" title="Contact Me" />
+    </>
+  );
+
   return (
     <nav
       className={`flex justify-center items-center h-[5vh] transition-all bg-third w-full ${stickyClass} shadow-lg`}
     >
-      <div className="flex w-full max-w-5xl text-xl justify-between py-4">
+      <div className="md:flex hidden w-full max-w-5xl text-xl justify-between py-4">
         <div>
           <LinkItem href="#" title="Omer" />
         </div>
-        <div className="flex gap-4">
-          <LinkItem href="#about" title="About" />
-          <LinkItem href="#skills" title="Skills" />
-          <LinkItem href="#projects" title="Projects" />
-          <LinkItem href="#contact" title="Contact Me" />
+        <div className="flex gap-4">{links()}</div>
+      </div>
+      <div className="flex md:hidden w-full px-4">
+        <div className="w-full flex justify-between items-center">
+          <LinkItem href="#" title="Omer" />
+
+          <button onClick={() => setDrawerOpen(true)} className="ml-auto">
+            <MenuIcon />
+          </button>
         </div>
+        <SwipeableDrawer
+          anchor="top"
+          open={drawerOpen}
+          onClose={() => setDrawerOpen(false)}
+          onOpen={() => setDrawerOpen(true)}
+        >
+          <div className="flex flex-col gap-2 text-lg  bg-third text-white p-4">
+            {links()}
+          </div>
+        </SwipeableDrawer>
       </div>
     </nav>
   );
