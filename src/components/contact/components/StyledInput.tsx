@@ -27,9 +27,7 @@ const StyledInput = ({
           onChange={onChange}
           value={state}
           placeholder={placeholder}
-          className={`resize-none w-full appearance-none p-2 outline-none underline-animation transition-all ${
-            active && "active"
-          }`}
+          className={`resize-none w-full appearance-none p-2 outline-none underline-animation transition-all`}
           onBlur={() => setActive(false)}
           onFocus={() => setActive(true)}
         />
@@ -38,9 +36,7 @@ const StyledInput = ({
           required
           placeholder={placeholder}
           type={type}
-          className={`appearance-none w-full p-2 outline-none underline-animation transition-all ${
-            active && "active"
-          }`}
+          className={`appearance-none w-full p-2 outline-none underline-animation transition-all`}
           onBlur={() => setActive(false)}
           onFocus={() => setActive(true)}
           value={state}
