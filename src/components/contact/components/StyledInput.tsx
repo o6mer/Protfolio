@@ -8,6 +8,7 @@ interface Props {
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => void;
   isTextarea?: boolean;
+  name: string;
 }
 
 const StyledInput = ({
@@ -16,6 +17,7 @@ const StyledInput = ({
   state,
   onChange,
   isTextarea,
+  name,
 }: Props) => {
   const [active, setActive] = useState(false);
 
@@ -23,6 +25,7 @@ const StyledInput = ({
     <>
       {isTextarea ? (
         <textarea
+          name={name}
           required
           onChange={onChange}
           value={state}
@@ -33,6 +36,7 @@ const StyledInput = ({
         />
       ) : (
         <input
+          name={name}
           required
           placeholder={placeholder}
           type={type}
