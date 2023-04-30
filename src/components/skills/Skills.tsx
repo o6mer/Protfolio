@@ -11,7 +11,7 @@ const Skills = () => {
     >
       <div className="w-full flex flex-wrap items-stretch  gap-4">
         {Object.keys(icons).map((name: any) => (
-          <div className="w-[10vw]" key={name}>
+          <div className="md:w-[10vw] w-[25vw]" key={name}>
             <LogoContainer name={name} />
           </div>
         ))}
