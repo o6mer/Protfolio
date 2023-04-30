@@ -9,12 +9,12 @@ const Skills = () => {
       bgColor="primary"
       title="Languages and Frameworks"
     >
-      <div className="h-full flex flex-col items-center">
-        <div className="w-full   grid md:grid-cols-5 grid-cols-3 items-stretch  gap-4">
-          {Object.keys(icons).map((name: any) => (
-            <LogoContainer name={name} key={name} />
-          ))}
-        </div>
+      <div className="w-full flex flex-wrap items-stretch  gap-4">
+        {Object.keys(icons).map((name: any) => (
+          <div className="w-[10vw]" key={name}>
+            <LogoContainer name={name} />
+          </div>
+        ))}
       </div>
     </SectionContainer>
   );
