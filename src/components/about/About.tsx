@@ -1,4 +1,3 @@
-import React from "react";
 import SectionContainer from "../general/SectionContainer";
 import backgroundPic from "../../assets/about/background.svg";
 import educationnPic from "../../assets/about/education.svg";

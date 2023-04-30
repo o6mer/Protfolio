@@ -1,4 +1,3 @@
-import React from "react";
 import heroImage from "../../assets/hero-image.png";
 import { TypeAnimation } from "react-type-animation";
 
@@ -14,12 +13,12 @@ const Hero = () => {
             className="text-6xl"
             style={{ whiteSpace: "pre-line" }}
             sequence={[
-              `Hi, I'm Omer Liraz👋 \n Full-Stack Developer`, // Types 'One'
-              4000, // Waits 1s
-              "Hi, I'm Omer Liraz👋 \n Front-End Developer", // Deletes 'One' and types 'Two'
-              2000, // Waits 2s
+              `Hi, I'm Omer Liraz👋 \n Full-Stack Developer`,
+              4000,
+              "Hi, I'm Omer Liraz👋 \n Front-End Developer",
+              2000,
               "Hi, I'm Omer Liraz👋 \n Back-End Developer",
-              2000, // Types 'Three' without deleting 'Two'
+              2000,
             ]}
             wrapper="span"
             cursor={true}

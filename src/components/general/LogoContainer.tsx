@@ -1,5 +1,4 @@
 import { Tooltip } from "@mui/material";
-import React from "react";
 import { icons } from "../../utils/icons";
 
 export type TSkillName = keyof typeof icons;
