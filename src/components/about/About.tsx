@@ -15,13 +15,14 @@ const About = () => {
                 <StyledHeader title="Background" />
                 <p>
                   Hello, my name is Omer Liraz and I am a passionate Full-Stack
-                  developer who enjoys building complex applications with great
-                  UI and powerful backends.
+                  developer based in <strong> Rishon LeZion, Israel</strong>. I
+                  enjoy building complex applications with great UI and powerful
+                  backends.
                 </p>{" "}
                 <p>
-                  Computers, specifically programming and development, have been
-                  a passion of mine all my life. In high school, I took my first
-                  computer science lessons and fell in love with the field.
+                  Programming and development, have been a passion of mine all
+                  my life. In high school, I took my first computer science
+                  lessons and fell in love with the field.
                 </p>
               </div>
               <img src={backgroundPic} alt="" className="w-auto md:w-[30%]" />
@@ -39,21 +40,15 @@ const About = () => {
                 <p>
                   After my release from the army at the end of 2021, I started
                   to teach myself Full-Stack development. I began with a few
-                  Unity courses to learn the basics of the web (HTML, CSS, and
-                  JavaScript), and from that point on, I was hooked.
+                  Unity courses to learn the basics of the web, and from that
+                  point on, I was hooked.
                 </p>
                 <p>
-                  After about 5 months of learning, practicing, and creating
-                  projects with vanilla JavaScript and JQuery, I started
-                  learning React as my main JavaScript framework and Node.js for
-                  the backend coupled with MongoDB and Express.
-                </p>
-                <p>
-                  Around 10 months into self-learning and creating projects, I
-                  enrolled in a Full-Stack course at CyberPro University. The
-                  course spanned 700 hours over 4 months. I decided that I
-                  wanted to take my learning to the next level, learn how to
-                  work as part of a team, and practice as much as possible.
+                  Around 10 months into self-learning and creating projects,I
+                  decided that I wanted to take my learning to the next level,
+                  learn how to work as part of a team, and practice as much as
+                  possible. I enrolled in a Full-Stack course at CyberPro
+                  University. The course spanned 700 hours over 4 months.
                 </p>
                 <p>
                   Throughout my learning journey, I have focused on using good
