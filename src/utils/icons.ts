@@ -14,6 +14,7 @@ import express from "../assets/expressIcon.png";
 import git from "../assets/gitIcon.png";
 import docker from "../assets/dockerIcon.png";
 import python from "../assets/pythonIcon.png";
+import aws from "../assets/aws.png";
 
 export const icons = {
   css: { image: css, title: "CSS3" },
@@ -32,4 +33,5 @@ export const icons = {
   git: { image: git, title: "Git" },
   docker: { image: docker, title: "Docker" },
   python: { image: python, title: "Python" },
+  aws: { image: aws, title: "AWS" },
 };

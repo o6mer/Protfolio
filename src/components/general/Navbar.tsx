@@ -56,7 +56,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`flex justify-center items-center h-[5vh] transition-all bg-third w-full ${stickyClass} shadow-lg`}
+      className={`flex justify-center items-center md:h-[5vh] h-[8vh] transition-all bg-third w-full ${stickyClass} shadow-lg`}
     >
       <div className="md:flex hidden w-full max-w-5xl text-xl justify-between py-4">
         <div>
