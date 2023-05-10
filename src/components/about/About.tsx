@@ -2,7 +2,7 @@ import SectionContainer from "../general/SectionContainer";
 import backgroundPic from "../../assets/about/background.svg";
 import educationnPic from "../../assets/about/education.svg";
 import plansPic from "../../assets/about/plans.svg";
-import Fade from "react-reveal/Fade";
+import { Fade } from "react-awesome-reveal";
 
 const About = () => {
   return (

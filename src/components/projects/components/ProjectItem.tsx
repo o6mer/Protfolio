@@ -5,7 +5,7 @@ import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
-import Fade from "react-reveal/Fade";
+import { Fade } from "react-awesome-reveal";
 
 interface Props {
   title: string;
@@ -27,7 +27,7 @@ const ProjectItem = ({
   reversed,
 }: Props) => {
   return (
-    <Fade triggerOnce bottom>
+    <Fade triggerOnce>
       <div
         className={`flex flex-col justify-between items-stretch gap-8 h-min ${
           reversed ? "md:flex-row-reverse" : "md:flex-row"

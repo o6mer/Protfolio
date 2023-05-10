@@ -5,13 +5,13 @@ import Projects from "./components/projects/Projects";
 import Contact from "./components/contact/Contact";
 import { Divider } from "@mui/material";
 import About from "./components/about/About";
-import Fade from "react-reveal/Fade";
+import { Fade } from "react-awesome-reveal";
 
 function App() {
   return (
     <main>
       <Navbar />
-      <Fade>
+      <Fade triggerOnce>
         <Hero />
         <Divider />
       </Fade>
@@ -21,7 +21,7 @@ function App() {
       <Divider />
       <Projects />
       <Divider />
-      <Fade>
+      <Fade triggerOnce>
         <Contact />
         <Divider />
       </Fade>

@@ -1,6 +1,6 @@
 import SectionContainer from "../general/SectionContainer";
 import LogoContainer from "../general/LogoContainer";
-import Fade from "react-reveal/Fade";
+import { Fade } from "react-awesome-reveal";
 
 const Skills = () => {
   return (
@@ -9,8 +9,8 @@ const Skills = () => {
       bgColor="primary"
       title="Languages and Frameworks"
     >
-      <Fade left cascade>
-        <div className="md:grid md:grid-cols-3 flex flex-col  gap-6 w-full  h-min">
+      <div className="md:grid md:grid-cols-3 items-stretch flex flex-col  gap-6 w-full  h-min">
+        <Fade cascade triggerOnce>
           <div className="border-fourth border-4 p-8 rounded-2xl">
             <header className="text-4xl text-center mb-8 font-bold">
               Frontend
@@ -26,7 +26,7 @@ const Skills = () => {
               <LogoContainer name="jquery" />
             </div>
           </div>
-          <div className="border-fourth border-4 p-8 rounded-2xl">
+          <div className="border-fourth border-4 p-8 rounded-2xl h-full">
             <header className="text-4xl text-center mb-8 font-bold">
               Backend
             </header>
@@ -40,7 +40,7 @@ const Skills = () => {
             </div>
           </div>
 
-          <div className="border-fourth border-4 p-8 rounded-2xl">
+          <div className="border-fourth border-4 p-8 rounded-2xl h-full">
             <header className="text-4xl text-center mb-8 font-bold">
               CI/CD
             </header>
@@ -50,8 +50,8 @@ const Skills = () => {
               <LogoContainer name="aws" />
             </div>
           </div>
-        </div>
-      </Fade>
+        </Fade>
+      </div>
     </SectionContainer>
   );
 };
