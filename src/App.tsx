@@ -5,25 +5,23 @@ import Projects from "./components/projects/Projects";
 import Contact from "./components/contact/Contact";
 import { Divider } from "@mui/material";
 import About from "./components/about/About";
-import { Fade } from "react-awesome-reveal";
+import Fade from "react-reveal/Fade";
 
 function App() {
   return (
     <main>
       <Navbar />
-      <Fade triggerOnce duration={2000}>
+      <Fade>
         <Hero />
         <Divider />
       </Fade>
       <About />
       <Divider />
-      <Fade triggerOnce duration={2000}>
-        <Skills />
-        <Divider />
-      </Fade>
+      <Skills />
+      <Divider />
       <Projects />
       <Divider />
-      <Fade triggerOnce duration={2000}>
+      <Fade>
         <Contact />
         <Divider />
       </Fade>
