@@ -9,7 +9,7 @@ const About = () => {
     <SectionContainer id="about" title="About Me">
       <div className="gap-2 flex flex-col text-xl">
         <div className="flex flex-col gap-4">
-          <Fade triggerOnce>
+          <Fade>
             <div className="flex flex-col md:flex-row">
               <div className="flex flex-col gap-2 ">
                 <StyledHeader title="Background" />
@@ -28,7 +28,7 @@ const About = () => {
               <img src={backgroundPic} alt="" className="w-auto md:w-[30%]" />
             </div>
           </Fade>
-          <Fade triggerOnce>
+          <Fade>
             <div className="flex flex-col md:flex-row">
               <img
                 src={educationnPic}
@@ -63,7 +63,7 @@ const About = () => {
               />
             </div>
           </Fade>
-          <Fade triggerOnce>
+          <Fade>
             <div className="flex flex-col md:flex-row  mt-4">
               <div className="flex flex-col gap-2 ">
                 <StyledHeader title="Plans" />

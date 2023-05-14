@@ -11,7 +11,7 @@ function App() {
   return (
     <main>
       <Navbar />
-      <Fade triggerOnce>
+      <Fade>
         <Hero />
         <Divider />
       </Fade>
@@ -21,7 +21,7 @@ function App() {
       <Divider />
       <Projects />
       <Divider />
-      <Fade triggerOnce>
+      <Fade>
         <Contact />
         <Divider />
       </Fade>

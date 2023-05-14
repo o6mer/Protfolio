@@ -10,7 +10,7 @@ const Skills = () => {
       title="Languages and Frameworks"
     >
       <div className="md:grid md:grid-cols-3 items-stretch flex flex-col  gap-6 w-full  h-min">
-        <Fade cascade triggerOnce>
+        <Fade cascade>
           <div className="border-fourth border-4 p-8 rounded-2xl">
             <header className="text-4xl text-center mb-8 font-bold">
               Frontend

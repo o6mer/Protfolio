@@ -27,7 +27,7 @@ const ProjectItem = ({
   reversed,
 }: Props) => {
   return (
-    <Fade triggerOnce>
+    <Fade>
       <div
         className={`flex flex-col justify-between items-stretch gap-8 h-min ${
           reversed ? "md:flex-row-reverse" : "md:flex-row"
